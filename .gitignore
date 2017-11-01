@@ -1,0 +1,8 @@
+alias
+as.sig
+cache/
+certificates
+gpg.rc
+my-pwds.gpg
+smime.rc
+temp/

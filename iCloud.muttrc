@@ -1,0 +1,25 @@
+#---------------------------------------------------------------
+## file:     ~/.mutt/iCloud.muttrc
+## iCloud specific options
+## author:   Alexander Strassheim
+## vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=sh
+#---------------------------------------------------------------
+
+# Settings
+set from          = $my_from_personal
+set folder        = imaps://imap.mail.me.com:993/
+set spoolfile     = +Inbox
+set postponed     = +Drafts
+set record        = "+Sent Messages"
+set trash         = "+Deleted Messages"
+
+# Receive options
+set imap_user     = $my_imap_personal
+set imap_pass     = $my_pw_personal
+
+# Send options
+set smtp_url      = smtp://$imap_user@smtp.mail.me.com:587/
+set smtp_pass     = $my_pw_personal
+set imap_check_subscribed
+
+# macro index S "<save-message>+iCloud/INBOX.Spam<enter>"   "mark message as spam"
